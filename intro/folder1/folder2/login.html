@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>다람쥐의 비밀 | 로그인</title>
+        <meta charset="utf-8">
+        <style>
+            *{
+                box-sizing: border-box;
+            }
+
+            body {
+                margin: 0;
+                background-color: aliceblue;
+            }
+
+            .login-form {
+                background-color: blanchedalmond;
+                width: 300px;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                border-radius: 5px;
+                margin-top: 30px;
+                padding: 20px;
+            }
+
+            .text-field {
+                font-size: 14px;
+                border-radius: 5px;
+                display: block;
+                margin-bottom: 10px;
+                width: 260px;
+                height: 30px;
+                padding-left: 10px;
+            }
+
+            .submit-btn {
+                font-size: 14px;
+                background-color: chocolate;
+                border-radius: 5px;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 260px;
+                height: 30px;
+            }
+
+            .links {
+                text-align: center;
+            }
+
+            .links a {
+                font-size: 12px;
+                color: darkgray;
+            }
+
+            input {
+                border-style: none;
+            }
+        </style>
+
+    </head>
+
+    <body>
+        <div class="login-form">
+            <form>
+                <input type="text" name="email" class="text-field" placeholder="아이디">
+                <input type="password" name="password" class="text-field" placeholder="비밀번호">
+                <input type="submit" value="로그인" class="submit-btn">
+            </form>
+
+            <div class="links">
+                <a href="#">비밀번호 분실</a>
+            </div>
+        </div>
+
+
+    </body>
+</html>
