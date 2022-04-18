@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>디스코드 따라하기</title>
+        <meta charset="utf-8">
+
+        <style>
+            *{
+                box-sizing: border-box;
+                list-style: none;
+                
+            }
+            body, html {
+                margin: 0;                      /*body에 기본적으로 생기는 margin 제거*/
+                width: 100%;
+                height: 100%;
+            }
+            .black-box {
+                width: 100%;
+                height: 100%;
+            }
+            .red-box {
+                border: red  solid 1px;
+                width: 100%;
+                color: aliceblue; 
+                background-color: rgb(32, 34, 37);               
+            }
+            .yellow-box {
+                border: gold solid 1px;
+                width: 100%;
+                height: 100%;
+            }
+            .orange-box {
+                border: orange solid 2px;
+                width: 100px;                   /*orange-box의 가로 길이 / 고정된 크기어야 함*/
+                height: 100%;  
+                background-color: rgb(32, 34, 37);      
+                position: relative;        
+            }
+            .pink-box {
+                border: pink solid 2px;
+                height: 100%; 
+                position: relative;      
+                display: inline-block;       
+                flex-basis: 100%;
+                
+            }
+            .green-box {
+                border: green solid 1px;
+                width: 200px;                   /*green=box의 가로 길이 / 고정된 크기어야 함*/
+                height: inherit;
+                background-color: rgb(47, 49, 54);
+                color: rgb(220, 220, 220);
+            }
+            .blue-box {
+                border: blue solid 1px;
+                flex-grow: 1;                  /*blue-box의 가로 길이 / 웹 가로 길이가 줄면 같이 줄어야 함*/
+                height: inherit;
+                background-color: rgb(54, 57, 63);
+                color: white;
+            }
+            .purple-box {
+                border: purple solid 1px;
+                width: 200px;                   /*pueple-box의 가로 길이 / 고정된 크기어야 함*/
+                height: inherit;
+                background-color: rgb(47, 49, 54);
+            }
+            .yellow-box > *, .pink-box > * {
+                float: left;
+            }
+            .yellow-box, .pink-box {
+                display: flex;
+            }
+            .orange-box > li > a > img {
+                width: 100%;
+            }
+            li {
+                margin: 10px;
+            }
+        
+        </style>
+
+    </head>
+
+    <body>
+        <div class="black-box">
+            <div class="red-box">Discord</div>      <!--맨 위에 Discord 라고 써있는 상단바 (웹에는 없는거같은데 연습용)-->
+            <div class="yellow-box">                <!--상단바를 제외한 나머지를 묶는 태그-->
+                <div class="orange-box">            <!--채널 목록용 왼쪽 사이드바-->
+                    <li><a href="#"><img src="../../img/discordy/discord.png"></a></li>
+                    <li><a href="#"><img src="../../img/discordy/abc.png"></a></li>
+                    <li><a href="#"><img src="../../img/discordy/number.png"></a></li>
+                    <li><a href="#"><img src="../../img/discordy/math.png"></a></li>
+                </div>      
+                <div class="pink-box">              <!--사이드바 제외 나머지 항목을 묶는 태그-->
+                    
+                    <div class="green-box">         <!--채팅목록 혹은 채팅/음성방 목록-->
+                        <li>통화방</li>
+                        <li>채팅방1</li>
+                        <li>채팅방2</li>
+
+                    </div>       
+                    <div class="blue-box item">          <!--온라인 친구 목록 혹은 채팅 내용이 들어갈 태그-->
+                        채팅이 들어갈 공간  
+                        <p></p>
+                        상단바와 하단바를 추가할 것 (수정사항)
+                    </div>        
+                    <div class="purple-box">        <!--친구 활동 상태 혹은 서버 멤버 목록이 들어갈 태그-->
+                        <li>멤버1</li>
+                        <li>멤버2</li>
+                        <li>멤버3</li>
+                    </div>                    
+                </div>
+            </div>
+
+        </div>
+
+    </body>
+</html>
